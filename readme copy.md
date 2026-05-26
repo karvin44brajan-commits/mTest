@@ -1,1 +1,0 @@
--- zrób tu strone pod prompt https://mobywatel.com/
