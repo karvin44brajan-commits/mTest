@@ -110,18 +110,7 @@ document.getElementById('error_ack').addEventListener('click',function(){
     eo.classList.remove('closing');
   },180);
 });
-var p = new URLSearchParams(location.search);
-var customImage = p.get('image') || localStorage.getItem('mw_custom_image');
-if(customImage && customImage.trim()) {
-  var photo = document.querySelector('.human');
-  if(photo) {
-    if(customImage.startsWith('http') || customImage.startsWith('data:')) {
-      photo.src = customImage;
-    } else {
-      photo.src = '../card/' + customImage;
-    }
-  }
-}
+
 </script>
 </body>
 </html>
